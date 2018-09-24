@@ -22,10 +22,11 @@
             </div>
             <div class="row">
             <div id="login-box" class="col-lg-3 col-sm-8 col-xs-10 col-sm-offset-2 col-xs-offset-1" style="">
-                <form action="#">
+                <form action="login" method="post">
+                    {{ csrf_field() }}
                     <input type="text" placeholder="Username" id="username" name="username" class="form-control" >
                     <br>
-                    <input type="password" placeholder="Password" id="passwowrd" name="username" class="form-control" >
+                    <input type="password" placeholder="Password" id="passwowrd" name="password" class="form-control" >
                     <br>
                     <input type="submit"  class="form-control" value="LOGIN" id="sub_btn"><br>
                     <a href="#"><span style="color: #3399ff">Forgot Password</span></a>
