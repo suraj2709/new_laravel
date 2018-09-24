@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="row">
-            <div id="login-box" class="col-lg-3 col-sm-9 col-sm-offset-2" style="">
+            <div id="login-box" class="col-lg-3 col-sm-8 col-xs-10 col-sm-offset-2 col-xs-offset-1" style="">
                 <form action="#">
                     <input type="text" placeholder="Username" id="username" name="username" class="form-control" >
                     <br>
