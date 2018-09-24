@@ -5,16 +5,33 @@
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}" />
         <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
         <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
         <style>
             body{
-                background: url('{{ URL::asset("images/bg1.jpg") }}');
+                background: url('{{ URL::asset("images/bg3.jpg") }}');
                 background-size: cover;
             }
         </style>
     </head>
     <body>
         <div class="container-fluid">
-            <h2>Hello</h2>
+            <div class="row">
+                <div id="login-header" class="col-lg-3 col-sm-9 col-sm-offset-2" style="">
+                    <h2><u>LOGIN</u></h2>
+                </div>
+            </div>
+            <div class="row">
+            <div id="login-box" class="col-lg-3 col-sm-9 col-sm-offset-2" style="">
+                <form action="#">
+                    <input type="text" placeholder="Username" id="username" name="username" class="form-control" >
+                    <br>
+                    <input type="password" placeholder="Password" id="passwowrd" name="username" class="form-control" >
+                    <br>
+                    <input type="submit"  class="form-control" value="LOGIN" id="sub_btn"><br>
+                    <a href="#"><span style="color: #3399ff">Forgot Password</span></a>
+                </form>
+            </div>
+            </div>
         </div>
     </body>
 </html>
