@@ -1,45 +1,20 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+        <title>Coaching-Supporter: A Complete solution for Coaching</title>
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}" />
+        <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+        <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
         <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
+            body{
+                background: url('{{ URL::asset("images/bg1.jpg") }}');
+                background-size: cover;
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5.2</div>
-            </div>
+        <div class="container-fluid">
+            <h2>Hello</h2>
         </div>
     </body>
 </html>
