@@ -35,3 +35,14 @@
 #sub_btn:hover{
     background: #0099ff;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  
+  #username{
+      margin-top: 25px;
+  }
+  
+}
