@@ -20,6 +20,11 @@ class LoginController extends BaseController
         $password = $request->password;
         
         $result['login'] = DB::select('Call usp_GetLoginDetails(?,?)',array($username,$password ));
-        
+        if(COUNT($result['login']) == 1){
+            return view('homepage');
+        }
+        else{
+            return view('welcome',['error'=>'Invalid Username or Password']);
+        }
     }
 }
