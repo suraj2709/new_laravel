@@ -42,7 +42,8 @@
 	left: 0;
 	width: 300px;
 	height: calc(100vh - 120px);
-	background: #1c1d22;
+	background: #00b8e6;
+        color:white;
 }
 
 .menu__wrap {
@@ -85,7 +86,7 @@
 	position: relative;
 	display: block;
 	padding: 1em 2.5em 1em 1.5em;
-	color: #bdbdbd;
+	color: white;
 	-webkit-transition: color 0.1s;
 	transition: color 0.1s;
 }
@@ -96,7 +97,7 @@
 	position: absolute;
 	right: 0;
 	padding: 0.25em 1.25em;
-	color: #2a2b30;
+	color: white;
 }
 
 .menu__link:hover,

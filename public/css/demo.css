@@ -210,8 +210,8 @@ a:hover {
 	height: 120px;
 	padding: 1em 0 0 0;
 	text-align: center;
-	color: #3b3d4a;
-	background: #1c1d22;
+	color: white;
+	background: #00ccff;
 }
 
 .dummy-icon {
@@ -225,9 +225,10 @@ a:hover {
 }
 
 .content {
+        color:black;
 	position: relative;
 	min-height: 300px;
-	margin: 0 0 0 300px;
+	margin: 0 0 0 150px;
 }
 
 .content--loading {
