@@ -26,10 +26,12 @@
 }
 
 .icon--menu:before {
+        color:black;
 	content: '\e903';
 }
 
 .icon--cross:before {
+        color:black;
 	content: '\e117';
 }
 
