@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use DB;
+use Session;
 
 
 class LoginController extends BaseController
@@ -22,8 +23,10 @@ class LoginController extends BaseController
         $result['login'] = DB::select('Call usp_GetLoginDetails(?,?)',array($username,$password ));
         if(COUNT($result['login']) == 1){
             return view('homepage');
+            Session::put('login','1');
         }
         else{
+            
             return view('welcome',['error'=>'Invalid Username or Password']);
         }
     }
