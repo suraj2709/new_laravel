@@ -17,17 +17,35 @@ class LoginController extends BaseController
     
     public function login(Request $request){
         //dd($request);
+        Session::forget('login');
         $username = $request->username;
         $password = $request->password;
         
         $result['login'] = DB::select('Call usp_GetLoginDetails(?,?)',array($username,$password ));
         if(COUNT($result['login']) == 1){
-            return view('homepage');
             Session::put('login','1');
+            return redirect('homepage');
+            
         }
         else{
             
             return view('welcome',['error'=>'Invalid Username or Password']);
+        }
+    }
+    
+    public function home(){
+        if(Session::get('login') == 1){
+            return view('homepage');
+        }else{
+            return redirect('/');
+        }
+    }
+    
+    public function dashboard(){
+        if(Session::get('login') == 1){
+            return view('dashboard');
+        }else{
+            return redirect('/');
         }
     }
 }

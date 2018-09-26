@@ -16,3 +16,11 @@ Route::get('/', function () {
 });
 
 Route::post('login','LoginController@login');
+Route::get('addstudent','AdmissionController@addstudent');
+Route::get('homepage','LoginController@home');
+Route::get('dashboard','LoginController@dashboard');
+Route::get('allstudents','AdmissionController@allstudents');
+Route::get('updatestudent','AdmissionController@updatestudent');
+Route::get('collectfee','FinanceController@collectfee');
+Route::get('insertmarks','AcademicsController@insertmarks');
+Route::get('updatemarks','AcademicsController@updatemarks');
