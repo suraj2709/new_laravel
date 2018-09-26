@@ -1,3 +1,3 @@
 @include('sidenav')
-Dashboard
+Collect Feeney
 @include('footer')

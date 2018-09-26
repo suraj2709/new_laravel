@@ -1,3 +1,3 @@
 @include('sidenav')
-Dashboard
+Insertmarks
 @include('footer')

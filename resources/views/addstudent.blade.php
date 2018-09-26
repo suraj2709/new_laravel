@@ -1,3 +1,3 @@
 @include('sidenav')
-Dashboard
+Add Student
 @include('footer')

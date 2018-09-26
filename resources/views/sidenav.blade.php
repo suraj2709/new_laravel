@@ -39,7 +39,7 @@
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-                                        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="" aria-owns="submenu-1" href="#">Dashboard</a></li>
+                                        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="" aria-owns="submenu-1" href="dashboard">Dashboard</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Student</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Fees</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Academics</a></li>
@@ -47,9 +47,9 @@
 				</ul>
 				<!-- Submenu 1 -->
 				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">All Students</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Register Student</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Update Student</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="allstudents">All Students</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="addstudent">Register Student</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="updatestudent">Update Student</a></li>
 <!--					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Salad Greens</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Mushrooms</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
@@ -63,7 +63,7 @@
 				</ul>-->
 				<!-- Submenu 2 -->
 				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fees Collect</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="collectfee">Fees Collect</a></li>
 <!--					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Berries</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">Special Selection</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Tropical Fruits</a></li>
@@ -77,8 +77,8 @@
 				</ul>-->
 				<!-- Submenu 3 -->
 				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Insert Marks</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Update Marks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="insertmarks">Insert Marks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="updatemarks">Update Marks</a></li>
 <!--					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Quinoa</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Rice</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Durum Wheat</a></li>
