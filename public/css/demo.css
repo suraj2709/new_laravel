@@ -38,9 +38,17 @@ body {
 	overflow: hidden;
 	margin: 0;
 	color: #cecece;
-	background:white;
+	background:#f2f2f2;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.header{
+    position:fixed;
+    height: 60px;
+    background: #00ccff;
+    width: 100%;
+    
 }
 
 a {
@@ -55,7 +63,7 @@ a:hover {
 
 .container {
 	overflow-y: auto;
-	height: 100vh;
+	
 }
 
 
@@ -228,7 +236,7 @@ a:hover {
         color:black;
 	position: relative;
 	min-height: 300px;
-	margin: 0 0 0 150px;
+	margin: 65px 0 0 150px;
 }
 
 .content--loading {
