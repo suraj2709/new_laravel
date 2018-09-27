@@ -25,6 +25,7 @@
 
 <body>
 	<!-- Main container -->
+        <div class="header"></div>
 	<div class="container">
 		<!-- Blueprint header -->
 		<header class="bp-header cf">
@@ -107,6 +108,7 @@
 				</ul>-->
 			</div>
 		</nav>
+                
 		<div class="content">
 			
 			
