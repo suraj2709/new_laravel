@@ -40,7 +40,7 @@
 
 .menu {
 	position: fixed;
-	top: 120px;
+	top: 180px;
 	left: 0;
 	width: 300px;
 	height: calc(100vh - 120px);

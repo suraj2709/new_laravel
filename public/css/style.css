@@ -36,13 +36,44 @@
     background: #0099ff;
 }
 
+.box{
+    background: white;
+    min-height: 100px;
+    border-radius: 6px;
+    border : 2px solid #00ccff;
+}
+
+.box-header{
+    margin-top:1%;
+    padding:0px;
+    background: #00ccff;
+    height:40px;
+    color:white;
+    font-weight:bolder;
+    width:100%;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius:6px;
+}
+
+.header{
+    position:fixed;
+    height: 60px;
+    background: #00ccff;
+    width: 100%;
+    color:black;
+    z-index: 2;
+}
+
+.red{
+    color: red;
+}
+
 @media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-  }
   
-  #username{
-      margin-top: 25px;
-  }
+  
+  .content{
+      margin-top:5%;
+}
   
 }
