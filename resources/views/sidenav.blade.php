@@ -14,18 +14,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- food icons -->
-        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
+        
 	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/organicfoodicons.css') }}" />
 	<!-- demo styles -->
 	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/demo.css') }}" />
 	<!-- menu styles -->
 	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/component.css') }}" />
 	<script src="{{ URL::asset('js/modernizr-custom.js') }}"></script>
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
 </head>
 
 <body>
 	<!-- Main container -->
-        <div class="header"></div>
+        <div class="header">
+            <a href="logout" title="Logout"> <img src="{{ URL::asset('images/logout.ico') }}" style="height:50px;float:right;margin-right:1.4%;margin-top: 0.4%;"></a>
+        </div>
 	<div class="container">
 		<!-- Blueprint header -->
 		<header class="bp-header cf">
