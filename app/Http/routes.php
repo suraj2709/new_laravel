@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('logout','LoginController@logout');
 Route::post('login','LoginController@login');
 Route::get('addstudent','AdmissionController@addstudent');
 Route::get('homepage','LoginController@home');
@@ -24,3 +24,4 @@ Route::get('updatestudent','AdmissionController@updatestudent');
 Route::get('collectfee','FinanceController@collectfee');
 Route::get('insertmarks','AcademicsController@insertmarks');
 Route::get('updatemarks','AcademicsController@updatemarks');
+Route::post('admitstudent','AdmissionController@admitstudent');
