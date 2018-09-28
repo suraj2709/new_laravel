@@ -31,5 +31,13 @@ class AdmissionController extends BaseController
     public function updatestudent(){
         return view('updatestudent');
     }
+    
+    public function admitstudent(Request $request){
+        if(Session::get('login') == 1){
+            dd($request);        }
+        else{
+            return redirect('/');
+        }
+    }
 }
 ?>
