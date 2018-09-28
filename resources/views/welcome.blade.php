@@ -30,9 +30,11 @@
                     <br>
                     <input type="submit"  class="form-control" value="LOGIN" id="sub_btn"><br>
                     <a href="#"><span style="color: #3399ff">Forgot Password</span></a>
-                </form>
-                <br>
-                <span style="color:red;"><?php if(isset($error)){ echo $error; } ?></span>
+                </form><br>
+                <span style="color:red">
+                <?php if(isset($error)){
+                    echo $error;
+                    } ?></span>
             </div>
             </div>
         </div>
