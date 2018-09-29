@@ -17,6 +17,12 @@ class LoginController extends BaseController
     
     public function login(Request $request){
         //dd($request);
+        
+        $this->validate($request,[
+         'username'=>'required ',
+         'password'=>'required'
+        ]);
+        
         Session::forget('login');
         $username = $request->username;
         $password = $request->password;

@@ -9,10 +9,19 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use DB;
 use Session;
+use Illuminate\Support\Facades\Redirect;
 
 class FinanceController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    
+    public function __construct(){
+      //  
+        if(Session::get('login') != 1){
+            Redirect::to('/')->send();
+        }
+    }
+    
     
     public function collectfee(){
         return view('collectfee');
