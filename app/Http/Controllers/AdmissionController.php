@@ -25,7 +25,8 @@ class AdmissionController extends BaseController
     
     public function addstudent(){
         if(Session::get('login') == 1){
-            return view('addstudent');
+            $result['class'] = DB::select('CALL usp_GetClass()');
+            return view('addstudent',$result);
         }
         else{
             return redirect('/');
@@ -43,7 +44,18 @@ class AdmissionController extends BaseController
     
     public function admitstudent(Request $request){
         if(Session::get('login') == 1){
-            dd($request);        }
+            $this->validate($request,[
+            'name'=>'required | regex:/^[\pL\s\-]+$/u',
+            'mother_name'=>'required |regex:/^[\pL\s\-]+$/u',
+            'father_name' => 'required | regex:/^[\pL\s\-]+$/u',
+            'class' => 'required',
+            'gender' => 'required',
+            'father_contact' => 'required | numeric | digits:10',
+        ]);
+            var_dump(Session::get('u_id'));die;
+            $result['admitstudent'] = DB::statement('CALL usp_RegisterStudent(?,?,?,?,?,?,?,?,?)');
+            
+        }
         else{
             return redirect('/');
         }

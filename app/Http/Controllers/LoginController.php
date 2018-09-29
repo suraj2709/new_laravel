@@ -23,12 +23,12 @@ class LoginController extends BaseController
          'password'=>'required'
         ]);
         
-        Session::forget('login');
         $username = $request->username;
         $password = $request->password;
         
         $result['login'] = DB::select('Call usp_GetLoginDetails(?,?)',array($username,$password ));
         if(COUNT($result['login']) == 1){
+            Session::put('u_id',$result['login'][0]->u_id);
             Session::put('login','1');
             return redirect('homepage');
             
