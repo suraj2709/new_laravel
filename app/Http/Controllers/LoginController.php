@@ -29,6 +29,7 @@ class LoginController extends BaseController
         $result['login'] = DB::select('Call usp_GetLoginDetails(?,?)',array($username,$password ));
         if(COUNT($result['login']) == 1){
             Session::put('u_id',$result['login'][0]->u_id);
+            Session::put('c_id',$result['login'][0]->c_id);
             Session::put('login','1');
             return redirect('homepage');
             
