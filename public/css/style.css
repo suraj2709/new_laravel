@@ -69,6 +69,52 @@
     color: red;
 }
 
+.table{
+    border: 2px solid #00ccff;
+    border-radius: 6px;
+}
+
+.table th{
+    background: #00ccff;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+}
+
+#modal-warning{
+    background: white;
+    z-index: 3;
+    min-height:25vh;
+    width:50%;
+    position: absolute;
+    top:10%;
+    left:25%;
+    border-radius: 10px;
+    border : 2px solid #00ccff;
+    display: none;
+}
+
+#modal-head{
+    background: #00ccff;
+    height: 20%;
+    width:90%;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-top:2%;
+    font-weight: bolder;
+    color: white;
+}
+#modal-body{
+    height: 70%;
+    width:90%;
+    margin-left: 5%;
+}
+
+#modal-heading{
+    margin-left: 1%;
+    padding-top: 1%;
+}
+
 @media screen and (max-width: 992px) {
   
   
