@@ -88,8 +88,17 @@
             </div>
             <br>
             <div class="row">
+                <div class="col-md-5">
+                    School :
+                </div>
+                <div class="col-md-7">
+                    <input type='text' name="school" class="form-control" >
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-md-12" style="text-align: center">
-                    <input type='submit' value="Submit" class="btn btn-primary" />
+                    <input type='submit' onclick="$(this).hide();" value="Submit" class="btn btn-primary" />
                 </div>
             </div>
             </div>
