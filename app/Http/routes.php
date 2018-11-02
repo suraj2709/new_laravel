@@ -27,3 +27,4 @@ Route::get('updatemarks','AcademicsController@updatemarks');
 Route::post('admitstudent','AdmissionController@admitstudent');
 Route::post('deactivatestudent','AdmissionController@deactivatestudent');
 Route::post('updatetudentbyrollno','AdmissionController@updatetudentbyrollno');
+Route::get('searchstudentbyclass','FinanceController@searchstudentbyclass');
